@@ -19,7 +19,7 @@ fetchButton.addEventListener('click', (event) => {
             // create empty html
             let html = ""
             // loop through data.colors and re-render colorList element
-            for (let color of data.colors) {
+            for (const color of data.colors) {
                 html += `<div class="render-color">
                             <img src="${color.image.bare}">
                             <h5>${color.hex.value}</h5>
